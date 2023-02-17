@@ -1,10 +1,7 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Irissqlcli < Formula
   include Language::Python::Virtualenv
 
-  desc "IRISSqlcli is a command line client for InterSystems IRIS SQL that can do auto-completion and syntax highlighting."
+  desc "Command-line client for InterSystems IRIS SQL, with auto-completion and coloring"
   homepage "https://github.com/caretdev/irissqlcli"
   url "https://files.pythonhosted.org/packages/18/f7/eec74358da02182a231162c1ef5f278ee3b65e5d92d8ca3b046c7cddbace/irissqlcli-0.4.0.tar.gz"
   sha256 "71506dd9400fc55b3f7be65819803b013c6a6d3cfbc70a2edc9288341bef8c6e"
