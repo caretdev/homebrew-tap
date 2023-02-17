@@ -1,10 +1,18 @@
-# Caretdev Irissqlcli
+# CaretDev Homebrew
 
 ## How do I install these formulae?
 
-`brew install caretdev/irissqlcli/<formula>`
+Run the following in your command-line:
 
-Or `brew tap caretdev/irissqlcli` and then `brew install <formula>`.
+```sh
+brew tap caretdev/tap
+```
+
+Install [IRISSqlCli](https://github.com/caretdev/irissqlcli)
+
+```sh
+brew install irissqlcli
+```
 
 ## Documentation
 
