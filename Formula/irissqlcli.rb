@@ -67,6 +67,12 @@ class Irissqlcli < Formula
   def install
     venv = virtualenv_create(libexec, "python3.10")
 
+    resource("pytzdata").stage do
+      inreplace "pyproject.toml", 'requires = ["poetry>=1.0.0"]', 'requires = ["poetry-core>=1.0"]'
+      inreplace "pyproject.toml", 'build-backend = "poetry.masonry.api"', 'build-backend = "poetry.core.masonry.api"'
+      venv.pip_install_and_link Pathname.pwd
+    end
+
     skip = %w[pytzdata]
     venv.pip_install resources.reject { |r| skip.include? r.name }
     venv.pip_install_and_link buildpath
