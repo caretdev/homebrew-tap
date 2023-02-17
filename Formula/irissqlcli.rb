@@ -67,8 +67,7 @@ class Irissqlcli < Formula
   def install
     venv = virtualenv_create(libexec, "python3.10")
 
-    skip = %w[pytzdata]
-    venv.pip_install resources.reject { |r| skip.include? r.name }
+    venv.pip_install resources
     venv.pip_install_and_link buildpath
   end
 
