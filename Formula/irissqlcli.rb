@@ -7,13 +7,6 @@ class Irissqlcli < Formula
   sha256 "1a3de341519b69441e1fde2e5426f476748dc5eae1c5b87619a5965469e77346"
   license "MIT"
 
-  bottle do
-    root_url "https://github.com/caretdev/homebrew-tap/releases/download/irissqlcli-0.4.0"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, monterey:     "c69546a524b303087523c0261233e28b1aeaffca80b0d1421413467d0cf7ed10"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "74f7062f44f84a0bea471fed067889b32f0be53dab1b074811e9acff0ba58603"
-  end
-
   depends_on "openssl@1.1"
   depends_on "pygments"
   depends_on "python-tabulate"
