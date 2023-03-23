@@ -3,8 +3,8 @@ class Irissqlcli < Formula
 
   desc "Command-line client for InterSystems IRIS SQL, with auto-completion and coloring"
   homepage "https://github.com/caretdev/irissqlcli"
-  url "https://files.pythonhosted.org/packages/18/f7/eec74358da02182a231162c1ef5f278ee3b65e5d92d8ca3b046c7cddbace/irissqlcli-0.4.0.tar.gz"
-  sha256 "71506dd9400fc55b3f7be65819803b013c6a6d3cfbc70a2edc9288341bef8c6e"
+  url "https://pypi.io/packages/source/i/irissqlcli/irissqlcli-0.5.1.tar.gz"
+  sha256 "1a3de341519b69441e1fde2e5426f476748dc5eae1c5b87619a5965469e77346"
   license "MIT"
 
   bottle do
